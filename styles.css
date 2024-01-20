@@ -1,0 +1,191 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-size: 20px
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #343a40;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0;
+    display: block;
+}
+
+
+/* Styles for the specific section */
+.special-section {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.special-section h1, .special-section h2, .special-section h3, .special-section h4, .special-section h5, .special-section h6 {
+    color: #333;
+}
+
+.special-section hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.special-section p, .special-section ul {
+    color: #666;
+}
+
+.special-section a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.special-section a:hover {
+    text-decoration: underline;
+}
+
+.special-section em {
+    font-style: italic;
+}
+
+.special-section sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.special-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.special-section li {
+    margin: max(1%, 8pt);
+}
+
+
+
+
+
+a.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+a.nav-link:hover {
+    background-color: #6c757d;
+}
+
+/* Style for links in the "About Me" section */
+a.custom-link {
+    font-weight: bold;
+    transition: color 0.3s ease;
+    color: #1a6887;
+    /* Different color for links in the "About Me" section */
+}
+
+a.custom-link:hover {
+    color: #142968;
+    /* Change color on hover */
+}
+
+section {
+    text-align: justify;
+    text-justify: newspaper;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+section.about-me {
+    display: flex;
+    text-align: justify;
+    text-justify: newspaper;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+section.about-me img {
+    border-radius: 0%;
+    max-width: min(50%, 400px);
+    height: auto;
+    margin-right: 20px;
+}
+
+section.about-me div {
+    text-align: justify;
+}
+
+section.hobby {
+    display: flex;
+    text-align: justify;
+    text-justify: newspaper;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+section.hobby img {
+    border-radius: 0%;
+    max-width: min(40%, 300px);
+    height: auto;
+    margin-right: 20px;
+}
+
+section.hobby div {
+    text-align: justify;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 0.1%;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.profile-image {
+    border: 4px solid #343a40;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: rotate(0deg);
+}

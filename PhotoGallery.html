@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Photo Gallery</title>
+    <style>
+        footer {
+            text-align: center;
+            padding: 0.1%;
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #343a40;
+            font-size: 20px
+        }
+
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: white;
+            /* Set the text color */
+            font-size: 225%;
+            /* Set the font size */
+            margin-bottom: 10px;
+            /* Set the bottom margin */
+            margin: 0.5%;
+            /* Add any other styles you want to customize */
+        }
+
+        nav {
+            background-color: #343a40;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            margin: 0;
+        }
+
+        a.nav-link {
+            text-decoration: none;
+            color: #fff;
+            padding: 15px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        a.nav-link:hover {
+            background-color: #6c757d;
+        }
+
+
+        main {
+            max-width: calc(92%);
+            margin: 4%;
+            padding: 1%;
+            background-color: #1d1c1c;
+            box-shadow: 0 0 1% rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .photo-gallery {
+            display: inline-block;
+            /* grid-template-columns: repeat(3, 1fr); */
+            width: 32.2%;
+            margin: 0.4%;
+            height: auto;
+            vertical-align: top;
+            /* Set this value as per your need */
+        }
+
+        .photo {
+            width: 100%;
+            margin-bottom: 1.5%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            transition: transform 0.5s ease;
+        }
+
+        #lightbox-nav {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        #lightbox-nav button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #lightbox-nav button:hover {
+            background-color: #555;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+        <header>
+            <h1>Yi's Photo Gallery</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">About Me</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="hobby.html" class="nav-link">Hobbies</a></li>
+                <li><a href="https://www.linkedin.com/in/yi-shen-b34148173/" class="nav-link">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Photo in 2023:</h2>
+            <div class="photo-gallery">
+                <img class="photo" src=".\PhotoGallery\2023 (01).jpg" alt="Photo 1"> 
+                <img class="photo" src=".\PhotoGallery\2023 (02).jpg" alt="Photo 2"> 
+                <img class="photo" src=".\PhotoGallery\2023 (03).jpg" alt="Photo 3"> 
+                <img class="photo" src=".\PhotoGallery\2023 (04).jpg" alt="Photo 4"> 
+                <img class="photo" src=".\PhotoGallery\2023 (05).jpg" alt="Photo 5"> 
+                <img class="photo" src=".\PhotoGallery\2023 (06).jpg" alt="Photo 6"> 
+                <img class="photo" src=".\PhotoGallery\2023 (07).jpg" alt="Photo 7"> 
+                <img class="photo" src=".\PhotoGallery\2023 (08).jpg" alt="Photo 8"> 
+            </div>
+            <div class="photo-gallery">
+                <img class="photo" src=".\PhotoGallery\2023 (09).jpg" alt="Photo 9"> 
+                <img class="photo" src=".\PhotoGallery\2023 (10).jpg" alt="Photo 10"> 
+                <img class="photo" src=".\PhotoGallery\2023 (11).jpg" alt="Photo 11"> 
+                <img class="photo" src=".\PhotoGallery\2023 (12).jpg" alt="Photo 12"> 
+                <img class="photo" src=".\PhotoGallery\2023 (13).jpg" alt="Photo 13"> 
+                <img class="photo" src=".\PhotoGallery\2023 (14).jpg" alt="Photo 14"> 
+                <img class="photo" src=".\PhotoGallery\2023 (15).jpg" alt="Photo 15"> 
+                <img class="photo" src=".\PhotoGallery\2023 (16).jpg" alt="Photo 16"> 
+            </div>
+            <div class="photo-gallery">
+                <img class="photo" src=".\PhotoGallery\2023 (17).jpg" alt="Photo 17"> 
+                <img class="photo" src=".\PhotoGallery\2023 (18).jpg" alt="Photo 18"> 
+                <img class="photo" src=".\PhotoGallery\2023 (19).jpg" alt="Photo 19"> 
+                <img class="photo" src=".\PhotoGallery\2023 (20).jpg" alt="Photo 20"> 
+                <img class="photo" src=".\PhotoGallery\2023 (21).jpg" alt="Photo 21"> 
+                <img class="photo" src=".\PhotoGallery\2023 (22).jpg" alt="Photo 22"> 
+                <img class="photo" src=".\PhotoGallery\2023 (23).jpg" alt="Photo 23"> 
+                <!-- Add more photos as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox container -->
+    <div class="lightbox" id="lightbox">
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+        <div id="lightbox-nav">
+            <button onclick="prevPhoto()">❮ Prev</button>
+            <button onclick="nextPhoto()">Next ❯</button>
+        </div>
+        <img id="lightbox-img" src="" alt="Enlarged Photo">
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        let currentPhotoIndex = 0;
+
+        // Function to open the lightbox
+        function openLightbox(photoUrl, photoIndex) {
+            currentPhotoIndex = photoIndex;
+            const lightbox = document.getElementById('lightbox');
+            const lightboxNav = document.getElementById('lightbox-nav');
+
+            lightbox.style.display = 'flex';
+            lightbox.style.opacity = 1;
+
+            lightboxNav.style.opacity = 1;
+
+            document.getElementById('lightbox-img').src = photoUrl;
+        }
+
+        // Function to close the lightbox
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxNav = document.getElementById('lightbox-nav');
+
+            lightbox.style.opacity = 0;
+
+            lightboxNav.style.opacity = 0;
+
+            setTimeout(() => {
+                lightbox.style.display = 'none';
+            }, 500);
+        }
+
+        // Function to show the previous photo
+        function prevPhoto() {
+            currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+            updateLightboxContent();
+        }
+
+        // Function to show the next photo
+        function nextPhoto() {
+            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+            updateLightboxContent();
+        }
+
+        // Function to update lightbox content based on the current index
+        function updateLightboxContent() {
+            const lightboxImg = document.getElementById('lightbox-img');
+            const photoUrl = photos[currentPhotoIndex].src;
+
+            lightboxImg.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                lightboxImg.src = photoUrl;
+                lightboxImg.style.transform = 'scale(1)';
+            }, 300);
+        }
+
+        // Add click event listeners to each photo
+        const photos = document.querySelectorAll('.photo');
+        photos.forEach((photo, index) => {
+            photo.addEventListener('click', () => {
+                openLightbox(photo.src, index);
+            });
+        });
+
+        // Close the lightbox when clicking outside the enlarged photo
+        document.getElementById('lightbox').addEventListener('click', (event) => {
+            if (event.target.id === 'lightbox') {
+                closeLightbox();
+            }
+        });
+    </script>
+
+</body>
+
+<footer>
+    <p>&copy; 2024 Yi Shen. All rights reserved.</p>
+</footer>
+
+
+</html>

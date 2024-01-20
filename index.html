@@ -5,35 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
+        /* CSS code to style the h2 element */
+        h2 {
+            color: #3498db; /* Set your desired color here */
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -41,39 +18,68 @@
 <body>
 
     <header>
-        <h1>Your Name</h1>
+        <h1>Yi Shen (沈毅)</h1>
+        <p></p>
         <p>Welcome to my personal website!</p>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link">About Me</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="hobby.html" class="nav-link">Hobbies</a></li>
+            <li><a href="https://www.linkedin.com/in/yi-shen-b34148173/" class="nav-link">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-me">
+        <!-- Content for the "About Me" section -->
+        <img src="./pics/Me.jpg" alt="Your Name" class="profile-image">
+        <div>
+            <h2>About Me:</h2>
+            <p> Greetings, I am <b>Yi Shen</b>, a first-year PhD student at the <a href="https://ece.engin.umich.edu/" target="_blank" class="custom-link">Department of Electrical & Computer Engineering (ECE)</a>, <a href="https://umich.edu/" target="_blank" class="custom-link">University of Michigan - Ann Arbor</a>.
+            My research interests are Mixed-signal & Communication Integrated Circuits</p>
+
+            <p>Since February 2023, I have been actively engaged in research at the <a href="https://micl.engin.umich.edu/" target="_blank" class="custom-link">Michigan Integrated Circuits Laboratory (MICL)</a>, working under the esteemed supervision of <a href="https://blaauw.engin.umich.edu/" target="_blank" class="custom-link">Prof. David Blaauw</a>. Additionally, I actively collaborate with <a href="https://kim.engin.umich.edu/" target="_blank" class="custom-link">Prof. Hun-Seok Kim</a>. I am passionate about advancing knowledge in the Integrated Circuits & VLSI field and look forward to making meaningful contributions throughout my academic journey.</p>
+
+            In addition to my academic pursuits, I have a keen interest in photography. <b>You can explore my work by clicking <a href="PhotoGallery.html" target="_blank" class="custom-link"> here</a></b>. Beyond photography, I find joy in traveling, crafting delightful coffee and cocktails, experimenting with cooking, and watching different kinds of movies. Badminton and soccer rank as my favorite sports activities.
+        </div>
     </section>
 
     <section>
-        <h2>My Projects</h2>
-        <p>List your projects and provide brief descriptions.</p>
-    </section>
+        <h2>Experience:</h2>
+    <h3>University of Michigan | Graduate Student Research Assistant</h3>
+    <p>Mar 2023 - Present | Ann Arbor, MI, United States | Advisor: Prof. David Blaauw</p>
+    <strong>Novel Mixed-signal & Communication IC Design.</strong><br></p>
 
-    <section>
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com<br>
-            LinkedIn: linkedin.com/in/yourname<br>
-            Twitter: @yourtwitterhandle
-        </p>
-    </section>
+    <hr>
 
-    <section>
-    <h2>Contact Me</h2>
-    <p>Email: your.email@example.com<br>
-        LinkedIn: <a href="https://www.linkedin.com/in/yourname" target="_blank">linkedin.com/in/yourname</a><br>
-        Twitter: <a href="https://twitter.com/yourtwitterhandle" target="_blank">@yourtwitterhandle</a>
+    <h3>Ravsense Microelectronics Co, Ltd. | Analog IC Design Engineer (Internship)</h3>
+    <p>Feb 2022 - Aug 2022 | Suzhou, Jiangsu, China | Advisor: Dr. Xiaogang Wang</p>
+    <p><strong>Design and Optimize 60 GHz mm-Wave FMCW Radar Transceiver.</strong><br>
     </p>
+    <hr>
+    <h3>Xi'an Jiaotong-Liverpool University | Undergraduate Research Assistant</h3>
+    <p>Sep 2020 - May 2022 | Suzhou, Jiangsu, China | Advisor: Prof. Wen Liu</p>
+    <p><strong>GaN-based Monolithic Smart Power ICs Design and System Development.</strong><br>
+      </p>
     </section>
+
+    <section>
+    <h2>Publications:</h2>
+
+    <p>[1]	<b>Y. Shen</b>, Z. Li, A. Li, W. Liu, "Monolithically Integrated PWM Circuit Based on AlGaN/GaN MIS-HEMTs for All-GaN Smart Power System", IEEE 14th International Conference on ASIC (ASICON), 2021.</p>
+    <p>[2]	A. Li, <b>Y. Shen</b>, Z. Li, R. Sun, I. Z. Mitrovic, H. Wen, S. Lam, and W. Liu, "A 4-Transistor Monolithic Solution to Highly Linear On-chip Temperature Sensing in GaN Power Integrated Circuits," in IEEE Electron Device Letters , vol. 44, no. 2, pp. 333-336, Feb. 2023 (JCR Q1, IF = 4.816)</p>
+    <p>[3]	A. Li, <b>Y. Shen</b>, Z. Li, Y. Zhao, I. Z. Mitrovic, H. Wen, S. Lam, and W. Liu, "A Monolithically Integrated 2-Transistor Voltage Reference with a Wide Temperature Range Based on AlGaN/GaN Technology," IEEE Electron Device Letters, vol. 43, no. 3, pp. 362-365, March 2022. (JCR Q1, IF = 4.816)</p>
+    <p>[4]	A. Li, M. Cui, <b>Y. Shen</b>, Z. Li, W. Liu, I. Z. Mitrovic, H. Wen, and C. Zhao, "Monolithic Comparator and Sawtooth Generator of AlGaN/GaN MIS-HEMTs With Threshold Voltage Modulation for High-Temperature Applications," IEEE Transactions on Electron Devices, vol. 68, no. 6, pp. 2673-2679, June 2021. (JCR Q2, IF = 3.221)</p>
+    <p>[5]	Z. Li, <b>Y. Shen</b>, A. Li and W. Liu, "A 5 to 50 V, -25 to 225 °C, 0.065%/°C GaN MIS-HEMT Monolithic Compact 2T Voltage Reference," IEEE 9th Workshop on Wide Bandgap Power Devices & Applications (WiPDA), 2022.</p>
+    <p>[6]	A. Li, <b>Y. Shen</b>, Z. Li, Y. Zhu, H. Wen, and W. Liu, "Stability Analysis of Monolithic GaN MIS-HEMT Comparator with Device PBTI and Circuit Stress Tests," IEEE 14th International Conference on ASIC (ASICON), 2021.</p>
+
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Yi Shen.  All rights reserved.</p>
     </footer>
+
 
 </body>
 
